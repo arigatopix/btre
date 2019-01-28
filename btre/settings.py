@@ -153,3 +153,9 @@ EMAIL_PORT = 587
 EMAIL_HOST_USER = 'teeruch.k@gmail.com'
 EMAIL_HOST_PASSWORD = 'B*s0012043500s*B'
 # พิมพ์ผิด ไอโง่ !!
+
+try:
+    from .local_settings import *
+
+except ImportError:
+    pass
